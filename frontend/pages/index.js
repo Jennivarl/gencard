@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import html2canvas from "html2canvas";
+import Head from "next/head";
 
 const ROLES = ["neuron", "synapse intern", "synapse", "brain intern", "brain", "singularity"];
 const ROLE_COLORS = { neuron: "#C7B0FB", "synapse intern": "#FDE1F0", synapse: "#FBCFE8", "brain intern": "#FEF3C7", brain: "#FDE68A", singularity: "#A7F3D0" };
@@ -149,6 +150,29 @@ export default function Home() {
 
     return (
         <>
+            <Head>
+                <title>GenCard - AI-Powered Verification Cards | Powered by GenLayer</title>
+                <meta name="description" content="Create your verified GenCard using GenLayer's intelligent contracts. AI-powered verification with blockchain consensus." />
+
+                {/* Open Graph / Facebook */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://gencard-ai.vercel.app/" />
+                <meta property="og:title" content="GenCard - AI-Powered Verification Cards" />
+                <meta property="og:description" content="Create your verified GenCard using GenLayer's intelligent contracts. Get verified by 5 AI validators with blockchain consensus!" />
+                <meta property="og:image" content="https://gencard-ai.vercel.app/background.png" />
+
+                {/* Twitter */}
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://gencard-ai.vercel.app/" />
+                <meta property="twitter:title" content="GenCard - AI-Powered Verification Cards" />
+                <meta property="twitter:description" content="Create your verified GenCard using GenLayer's intelligent contracts. Get verified by 5 AI validators!" />
+                <meta property="twitter:image" content="https://gencard-ai.vercel.app/background.png" />
+
+                {/* WhatsApp */}
+                <meta property="og:site_name" content="GenCard" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+            </Head>
             <style jsx global>{`
                 * {
                     scroll-behavior: auto !important;
