@@ -450,7 +450,7 @@ export default function Home() {
                                 <button onClick={() => {
                                     if (!result?.nickname) return;
                                     const tweetText = `🎉 I just got verified as ${role} aka "${result.nickname}"! Check out GenFren powered by @genLayer 🚀\n\n`;
-                                    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}&url=https://x.com/varl999/status/2023355629650223456`, '_blank');
+                                    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`, '_blank');
                                 }} style={{ flex: 1, padding: '12px 24px', fontSize: 15, fontWeight: 600, backgroundColor: '#10b981', color: '#fff', border: 'none', borderRadius: 8, cursor: 'pointer', boxShadow: '0 4px 12px rgba(0,0,0,0.3)' }}>
                                     Share to 𝕏
                                 </button>
@@ -464,7 +464,7 @@ export default function Home() {
                                 <button onClick={() => {
                                     if (!result?.nickname) return;
                                     const tweetText = `🎉 I just got verified as ${role} aka "${result.nickname}"! Check out GenFren powered by @genLayer 🚀\n\n`;
-                                    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}&url=https://x.com/varl999/status/2023355629650223456`, '_blank');
+                                    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`, '_blank');
                                 }} style={{ padding: '12px 24px', fontSize: 16, fontWeight: 600, backgroundColor: '#10b981', color: '#fff', border: 'none', borderRadius: 8, cursor: 'pointer' }}>
                                     Share to 𝕏
                                 </button>
